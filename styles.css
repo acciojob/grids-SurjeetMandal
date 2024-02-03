@@ -8,14 +8,15 @@
 }
 .item-1{
 	height: 200px;
-	width: 200px;
 	border: 2px dotted rgb(38,38,43);
 }
 .first{
 	background-color: teal;
+	width: 200px;
 }
 .second{
 	background-color: thistle;
+	width: 400px;
 }
 .third{
 	background-color: tomato;
