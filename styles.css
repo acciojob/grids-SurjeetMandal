@@ -20,11 +20,10 @@
 }
 .third{
 	background-color: tomato;
-	offset: 2;
-	
 }
 .fourth{
 	background-color: turquoise;
+	alignment-baseline: end;
 }
 .fifth{
 	background-color: violet;
