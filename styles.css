@@ -5,6 +5,7 @@
 	background-color: rgb(41,0,0);
 	display: grid;
 	grid-template-columns: 200px 200px 200px;
+	grid-template-rows: 200px 200px 200px;
 }
 .item-1{
 	height: 200px;
