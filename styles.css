@@ -4,8 +4,8 @@
 	border: 5px solid rgb(4,255,4);
 	background-color: rgb(41,0,0);
 	display: grid;
-	grid-template-columns: 200px 200px 200px;
-	grid-template-rows: 200px 200px 200px;
+	grid-template-columns: repeat(3, 200px);
+	grid-template-rows: repeat(3, 200px);
 }
 .item-1{
 	height: 200px;
@@ -13,30 +13,31 @@
 }
 .first{
 	background-color: teal;
-	grid-column: 1/3;
+	grid-column-start: 1;
+	grid-column-end: 2;
 }
 .second{
 	background-color: thistle;
-	grid-column: 2/3;
+	grid-column-start: 2; 
+	grid-column-end: 4;
 }
 .third{
 	background-color: tomato;
-	grid-column: 1/3;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 0.5;
+	grid-column-end: 1.5;
+	
 	offset: 2;
 }
 .fourth{
 	background-color: turquoise;
-	alignment-baseline: end;
-	grid-column: 1/3;
-	justify-content: space-between;
+	grid-column-start: 3;
+	grid-column-end: 4;
 }
 .fifth{
 	background-color: violet;
-	grid-column: 1/3;
-	align-self: center;
 }
 .sixth{
 	background-color: yellowgreen;
-	grid-column: 1/3;
-	align-self: center;
 }
