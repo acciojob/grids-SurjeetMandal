@@ -19,8 +19,3 @@ app.post('/add', (req, res) => {
   // res.sendFile(path.join(__dirname + '/main.html'));
 });
 module.exports = app;
-
-const app = require("./index.js");
-app.listen(3000, () => {
-  console.log('server started');
-});

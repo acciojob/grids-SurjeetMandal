@@ -1,1 +1,32 @@
-
+  .container{
+	border: 4px solid lightgreen;
+	padding: 6px;
+}
+.row{
+	height: 200px;
+	padding: 0 6px; 
+}
+.row div{
+	border: 2px dotted black;
+}
+.r1c1{
+	background: #088F8F;
+}
+.r1c2{
+	background: #FFD1C7;
+}
+.row-2,.row-3{
+	background: brown;
+}
+.r2c1{
+	background: salmon;
+}
+.r2c2{
+	background: #47FFEB;
+}
+.r3c1{
+	background: violet;
+}
+.r3c2{
+	background: #99FF38;
+}
