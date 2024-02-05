@@ -2,36 +2,90 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
-    <title>Your Webpage Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Responsive Grid Layout</title>
+    <style>
+        /* Custom styling for the container, rows, and columns */
+        .custom-container {
+            width: 600px;
+            border: 5px solid rgb(4, 255, 4);
+            background-color: rgb(41, 0, 0);
+        }
+        .custom-row {
+            border: 5px solid rgb(255, 188, 188);
+            height: 200px;
+        }
+        .custom-column {
+            border: 2px dotted rgb(38, 38, 43);
+        }
+        /* Specific background colors for columns */
+        .custom-column:nth-child(1) {
+            background-color: teal;
+        }
+        .custom-column:nth-child(2) {
+            background-color: thistle;
+        }
+        .custom-column:nth-child(3) {
+            background-color: tomato;
+        }
+        .custom-column:nth-child(4) {
+            background-color: turquoise;
+        }
+        .custom-column:nth-child(5) {
+            background-color: violet;
+        }
+        .custom-column:nth-child(6) {
+            background-color: yellowgreen;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container custom-container">
         <!-- Row 1 -->
-        <div class="row row1">
-            <div class="col-md-4 bg-teal"></div>
-            <div class="col-md-8 bg-thistle"></div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 custom-row">
+                <div class="custom-column">
+                    Row 1, Column 1
+                </div>
+            </div>
+            <div class="col-md-8 col-sm-6 custom-row">
+                <div class="custom-column">
+                    Row 1, Column 2
+                </div>
+            </div>
         </div>
-
         <!-- Row 2 -->
-        <div class="row row2">
-            <div class="col-md-4 offset-md-2 bg-tomato"></div>
-            <div class="col-md-4 bg-turquoise"></div>
-            <div class="w-100"></div>
+        <div class="row">
+            <div class="col-md-4 offset-md-2 custom-row">
+                <div class="custom-column">
+                    Row 2, Column 1
+                </div>
+            </div>
+            <div class="col-md-4 custom-row">
+                <div class="custom-column">
+                    Row 2, Column 2
+                </div>
+            </div>
+            <div class="col-md-2 custom-row"></div> <!-- Empty Space -->
         </div>
-
         <!-- Row 3 -->
-        <div class="row row3">
-            <div class="col-md-4 bg-violet"></div>
-            <div class="col-md-4 bg-yellowgreen"></div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 custom-row mx-auto">
+                <div class="custom-column">
+                    Row 3, Column 1
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 custom-row mx-auto">
+                <div class="custom-column">
+                    Row 3, Column 2
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- Bootstrap scripts (ensure proper version is used) -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
